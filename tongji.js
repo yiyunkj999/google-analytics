@@ -20,5 +20,5 @@
           ? 'https://zz.bdstatic.com/linksubmit/push.js' 
           : 'http://push.zhanzhang.baidu.com/push.js';
         document.body.appendChild(s);
-      }, 800);
+      }, 500);
     })();
