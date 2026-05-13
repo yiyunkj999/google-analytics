@@ -4,7 +4,8 @@
       const tongjiid = new URL(document.currentScript.src).searchParams.get('id');
       var script = document.createElement('script');
       script.async = true;
-      script.src = '//www.googletagmanager.com/gtag/js?id='+tongjiid;
+      script.src = '//analytics.123101.xyz/o9o4/gtm.js?id='+tongjiid;
+      ////www.googletagmanager.com/gtag/js
       document.head.appendChild(script);
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
