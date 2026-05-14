@@ -1,10 +1,10 @@
     //google analytics
     (function() {
-      const domain = 'analytics.123101.xyz';
+      const domain = 'analytics.123101.xyz/o9o4';
       const tongjiid = new URL(document.currentScript.src).searchParams.get('id');
       var script = document.createElement('script');
       script.async = true;
-      script.src = `//${domain}/o9o4/gtm.js?id=${tongjiid}`;
+      script.src = `//${domain}/gtm.js?id=${tongjiid}`;
       document.head.appendChild(script);
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
