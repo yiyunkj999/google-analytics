@@ -1,16 +1,15 @@
     //google analytics
     (function() {
-      const domain = new URL(document.currentScript.src).origin;
+      const domain = 'analytics.123101.xyz';
       const tongjiid = new URL(document.currentScript.src).searchParams.get('id');
       var script = document.createElement('script');
       script.async = true;
-      script.src = '//analytics.123101.xyz/o9o4/gtm.js?id='+tongjiid;
-      ////www.googletagmanager.com/gtag/js
+      script.src = `//${domain}/o9o4/gtm.js?id=${tongjiid}`;
       document.head.appendChild(script);
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config',tongjiid);
+      gtag('config', tongjiid, {transport_url: domain});
     })();
     
     //baiud push
