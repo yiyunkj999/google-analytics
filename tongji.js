@@ -11,12 +11,10 @@
     gtag('js', new Date());
     gtag('config', tongjiid, {transport_url: domain});
 })();
-    
+
 //baiud push
-(function(){
-    setTimeout(()=>{
+(function() {
     const s = document.createElement('script');
-    s.src = location.protocol === 'https:' ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+    s.src = '//zz.bdstatic.com/linksubmit/push.js';
     document.body.appendChild(s);
-    }, 500);
 })();
