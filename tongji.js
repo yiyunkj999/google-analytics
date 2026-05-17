@@ -15,6 +15,7 @@
 //baiud push
 (function() {
     const s = document.createElement('script');
+    s.async = true;
     s.src = '//zz.bdstatic.com/linksubmit/push.js';
     document.body.appendChild(s);
 })();
